@@ -2,7 +2,7 @@ import pytest
 from exercises.advanced import factorial
 
 
-@pytest.mark.skip('Not yet implemented.')
+#@pytest.mark.skip('Not yet implemented.')
 def test_factorial():
     assert sorted(factorial(1)) == [1]
     assert sorted(factorial(2)) == [2]

@@ -1,15 +1,18 @@
-'''Avancerade övningar.'''
+"""Avancerade övningar."""
+
 
 def factorial(x):
-    '''Faktorisera ett tal.
+    """Faktorisera ett tal.
 
     Returnera en lista med alla faktorer för talet `x`.
-    '''
-    pass
+    """
+    fx = []
+    
+    return fx
 
 
 def yahtzee_score(dice, round):
-    '''Räkna ut den högsta godkända poäng för den aktuella rundan.
+    """Räkna ut den högsta godkända poäng för den aktuella rundan.
 
     Argumentet `dice` är en lista med fem heltal med värden 1 till och med 6.
     Argumentet `round` är en sträng med något av värdena i tabellen nedan.
@@ -30,15 +33,16 @@ def yahtzee_score(dice, round):
     Stor stege  'large_straight'
     Yatzy       'yahtzee'
     Chans       'chance'
-    '''
+    """
     pass
 
 
 def blackjack_score(cards):
-    '''Räkna ut poängen för en korthand i blackjack.
+    """Räkna ut poängen för en korthand i blackjack.
 
-    Argumentet cards anges som lista med strängar där varje sträng representerar
-    ett kort. En sådan sträng består av en färg, ett bindestreck och en valör.
+    Argumentet cards anges som lista med strängar där varje sträng
+    representerar ett kort. En sådan sträng består av en färg,
+    ett bindestreck och en valör.
 
     Färg    Sträng          Valör   Sträng
     --------------          --------------
@@ -52,5 +56,5 @@ def blackjack_score(cards):
 
     Om en hand innehåller ess ska den räknas på det sätt som är mest
     fördelaktigt för spelaren.
-    '''
+    """
     pass
