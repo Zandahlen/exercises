@@ -38,6 +38,25 @@ def sum_of_cubes(x):
     """
     soc = 0
     while x > 0:
-        soc += x**3
+        soc += x ** 3
         x = x - 1
     return soc
+
+
+def savings_calculator(inital_amount, monthly_deposit, annual_interest, years):
+    """Beräkna värdet för ett månadssparande efter `years` år.
+
+    Sparandet startas med beloppet `intial_amount` kronor och varje månad
+    inbetalas beloppet `monthly_deposit` kronor.
+
+    Räntan utbetalas månadsvis (`annual_interest` / 12). Räntan anges i procent
+    Argumentet `years` anger hur många hela år sparandet kommer att fortgå.
+    """
+    value = inital_amount
+    months = years * 12
+    monthly_interest = annual_interest / 12 / 100
+    while months > 0:
+        value = value + monthly_interest * value
+        value += monthly_deposit
+        months = months - 1
+    return value
